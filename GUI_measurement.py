@@ -8,9 +8,6 @@ from measurement_routine import measurement_routine
 from library_file_management import *
 import numpy as np
 
-# TODO list:
-# - fare una demag_sweep per il quadrupoli che alterna i campi dei due invece di fare prima uno poi l'altro
-# - Impedire di chiamare un sample o user "new sample" o "new user"
 
 logger.info("*** LOG SCREEN ***")
 
