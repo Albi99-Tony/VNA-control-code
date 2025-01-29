@@ -1,6 +1,5 @@
 from datetime import datetime
 from logger import logger
-from library_analysis import *
 from library_gui import *
 from library_vna import *
 from library_power_supply import *
