@@ -1,0 +1,4 @@
+TODO
+
+1) Deprecate Sparameter selection and implement Port selection 
+2) Integrate the GUI with data storage on elabFTW
