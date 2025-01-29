@@ -103,21 +103,3 @@ def save_plot(path: str, name: str):
     os.makedirs(folder_path, exist_ok=True)
     plt.savefig(os.path.join(folder_path, name))
     logging.info(f"Plot saved to {os.path.join(folder_path, name)}")
-
-if __name__ == "__main__":
-    # Tests for testing the library
-
-    # Save metadata tests
-    test_path = r"local\DATA_test\newtestuser\testsample\testmeasure"
-
-    save_metadata({
-        "user_name": "newtestuser",
-        "field_sweep": [1, 2, 5],
-        "sample_name": "testsample",
-        "measurement_name": "testmeasure",
-        "number_of_points": 3
-    })
-
-    # Load measurement tests
-    test_path = r"local\DATA_test\newtestuser\testsample\testmeasure"
-    freqs, fields, amps, phases = load_measurement(test_path, transpose=True)
